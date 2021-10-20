@@ -3,7 +3,7 @@ Loading screen made for FiveM server
 
 ## Install
 
-Go to the [releases section](https://github.com/zemiguel20/FiveM-LoadingScreen/releases) and dowload the "SourceCode" file of the lastest version. <br>
+Go to the [releases section](https://github.com/zemiguel20/FiveM-LoadingScreen/releases) and dowload the "LoadingScreen.zip" file of the lastest version. <br>
 Extract inside a folder named `LoadingScreen`, that can be placed anywhere inside the `resources` folder and then add `ensure LoadingScreen` to the `server.cfg` file.
 
 ## Loading screen lifetime
