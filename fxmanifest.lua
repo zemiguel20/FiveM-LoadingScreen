@@ -1,0 +1,20 @@
+fx_version 'cerulean'
+game 'gta5'
+
+author 'Jose Coutinho'
+description 'Olympus loading screen'
+version '1.0.0'
+
+file 'assets/images/logo-branco.png'
+file 'assets/video.mp4'
+file 'assets/fonts/Akronim/Akronim-Regular.ttf'
+file 'assets/images/discord-white-icon.png'
+file 'assets/music.mp3'
+file 'assets/images/sound-on.png'
+file 'assets/images/sound-off.png'
+file 'main.js'
+file 'style.css'
+file 'index.html'
+
+loadscreen 'index.html'
+loadscreen_cursor 'yes'
