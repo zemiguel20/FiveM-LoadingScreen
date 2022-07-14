@@ -4,7 +4,6 @@
 var discordLogo = document.getElementById("discord-logo");
 var discordLink = document.getElementById("discord-text");
 var audioPlayer = document.getElementById("audio-player");
-var speakerIcon = document.getElementById("speaker");
 
 //---------------------------------------------------
 // Animacoes do botao do Discord
@@ -32,16 +31,7 @@ discordLogo.addEventListener("mouseleave", moveDownAndHideText);
 // Carregar botao discord
 
 function openDiscordNewWindow() {
-    window.open("https://discord.gg/mtolympusrp", "", "width=700,height=700");
+    window.open("https://discord.gg/mtolympusrp");
 }
 
 discordLogo.addEventListener("click", openDiscordNewWindow);
-
-//---------------------------------------------------
-// Carregar botao de Mute da musica
-speakerIcon.addEventListener("click", () => {
-    speakerIcon.src = audioPlayer.muted ? "assets/images/sound-on.png" : "assets/images/sound-off.png";
-    audioPlayer.muted = audioPlayer.muted ? false : true;
-
-    if (audioPlayer.paused) audioPlayer.play(); // Apenas para o browser normal por causa de nao deixar autoplay
-});
