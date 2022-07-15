@@ -9,25 +9,25 @@
 
 <body>
     <!--Background layer-->
-    <video autoplay muted loop>
+    <video autoplay muted loop class="fullscreen" style="z-index: -10;">
         <source src="assets/video.mp4" type="video/mp4">
     </video>
 
     <!--Darken overlay-->
-    <div class="overlay"></div>
+    <div class="fullscreen" style="background-color: black; opacity: 0.5; z-index: -9;"></div>
 
-    <img src="assets/images/logo-branco.png" class="logo">
-    <div class="text">
-        <h1 id="server-name">MT OLYMPUS RP</h1>
+    <header style="height: 10vh;"></header>
+
+    <div class="center flex-col-center" style="width: 20%;">
+        <img src="assets/images/logo-branco.png" style="width: 100%; opacity: 0.8;">
+        <h1 class="logo-text gold-text-effect" style="margin: 0;">MT OLYMPUS RP</h1>
+        <p style="text-align: center; margin: 0;">
+            Junta-te a nós no Discord!
+        </p>
+        <a href="https://discord.gg/hzdjjFEFGQ" target="_blank" style="width: 50%;">
+            <img src="assets/images/discord-white-icon.png" class="button" style="width: 100%;" alt="dicord-logo">
+        </a>
     </div>
-
-    <footer id="footer">
-        <img id="discord-logo" src="assets/images/discord-white-icon.png" alt="logo">
-        <p id="discord-text">https://discord.gg/mtolympusrp</p>
-    </footer>
-
-    <script src="main.js"></script>
-
 </body>
 
 </html>

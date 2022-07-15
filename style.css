@@ -3,76 +3,36 @@
     src: url(assets/fonts/Akronim/Akronim-Regular.ttf);
 }
 
-@font-face {
-    font-family: 'Creepster';
-    src: url(assets/fonts/Creepster/Creepster-Regular.ttf);
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-    user-select: none;
-}
-
-video {
+.fullscreen {
     position: absolute;
     top: 0;
     left: 0;
-    width: 150%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -10;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background-color: black;
-    opacity: 0.4;
-
-    z-index: -9;
+.button {
+    transition: 0.3s;
 }
 
-.logo {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    object-fit: contain;
-
-    /* centrar logo com um pouco de offset para cima */
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    opacity: .8;
-
-    z-index: -8;
+.button:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
-.text {
-    position: absolute;
-    width: 100%;
-    top: 55%;
+.flex-col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@keyframes shine {
-    to {
-     background-position: 200% center;
-    }
-}
-
-.text h1 {
-    width: 100%;
-    font-family: 'Akronim', cursive;
-    font-size: 6vw;
-    text-align: center;
-
+.gold-text-effect {
     /* Setup gradiente */
     background: linear-gradient(to right, #cfcfcf 15%, #c2a15b 35%, #ffefc9 50%, #c2a15b 75%, #cfcfcf 100%);
     background-size: 200% auto;
@@ -83,53 +43,23 @@ video {
     animation: shine 5s linear infinite;
 }
 
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
 
-#footer {
-    position: absolute;
-    bottom: 20px;
+.logo-text {
     width: 100%;
-    height: 8%;
+    font-family: 'Akronim', cursive;
+    font-size: 3vw;
+    text-align: center;
 
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
+    transform: translate(0, -100%);
 }
 
-#discord-logo {
-    transition: 0.5s;
-    margin-left: 20px;
-}
-
-#discord-logo:hover {
-    cursor: pointer;
-}
-
-#discord-text {
+p {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    margin-top: auto;
-    margin-bottom: auto;
-    flex-grow: 1; /* ocupa o espaco livre restante */
-    transform: translate(50px, -8px); /* posicao inicial para a animacao */
-    opacity: 0;
-    transition: 0.5s;
-}
-
-#speaker {
-    filter: brightness(0) invert(1); /* colocar todo branco */
-    
-    /* Ajustar o tamanho e posicao do icon */
-    margin-left: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 80%;
-    width: auto;
-
-    transition: 0.5s;
-}
-
-#speaker:hover{
-    cursor: pointer;
-    transform: translateY(-8px);
 }
